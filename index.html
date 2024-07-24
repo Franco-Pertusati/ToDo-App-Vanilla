@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Vanilla</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="utilities.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="apptitle">
+        <h1>Vanilla</h1>
+        <h2>ToDo App</h2>
+        <div>
+            <input type="text" placeholder="New ToDo" id="newTodoInput" onchange="createTodo()">
+            <button class="roundedFull shadow" id="createTodoBtn">Create</button>
+        </div>
+        <button class="roundedFull delBtn shadow" onclick="localStorage.removeItem('todos')">Remove localStorage</button>
+    </div>
+    <div class="listContainer">
+        <input type="text" class="mb16" placeholder="Search todos" id="searchInput">
+        <div class="">
+            <div class="mb16">
+                <div class="flex mb16">
+                    <h2>ToDo</h2>
+                    <span id="todoCount">Nothing to do</span>
+                </div>
+                <div id="todoList"></div>
+            </div>
+            <div class="flex mb16">
+                <h2>Done</h2>
+            </div>
+            <div id="doneList">
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

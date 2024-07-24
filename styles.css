@@ -1,0 +1,144 @@
+:root {
+    --seasalt: #f8f9faff;
+    --antiflash-white: #e9ecefff;
+    --platinum: #dee2e6ff;
+    --french-gray: #ced4daff;
+    --french-gray-2: #adb5bdff;
+    --slate-gray: #6c757dff;
+    --outer-space: #495057ff;
+    --onyx: #343a40ff;
+    --eerie-black: #212529ff;
+    --mainColor: #175eeb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+    font-size: 62.5%;
+    color: var(--eerie-black);
+}
+
+body {
+    padding: 4vh 8vw;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 320px;
+    background: var(--antiflash-white);
+}
+
+.apptitle {
+    width: 520px;
+    padding: 12px 24px;
+}
+
+.apptitle div {
+    margin: 16px 0;
+    display: flex;
+    gap: 18px;
+}
+
+.apptitle input {
+    width: 100%;
+}
+
+.listContainer {
+    margin-top: 32px;
+    width: 470px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#todoList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#doneList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.listContainer input {
+    width: 470px;
+}
+
+.card {
+    border-radius: 8px;
+    display: flex;
+    width: 470px;
+}
+
+.card p {
+    padding: 12px;
+    font-size: 2rem;
+}
+
+.card div {
+    margin-left: auto;
+    margin-right: 12px;
+}
+
+.card span ion-icon {
+    padding-top: 12px;
+    font-size: 3rem;
+    cursor: pointer;
+    color: var(--slate-gray);
+}
+
+.card span ion-icon:hover {
+    color: var(--onyx);
+}
+
+.card button {
+    border-radius: 0 8px 8px 0;
+    display: grid;
+    place-items: center;
+}
+
+.card button ion-icon {
+    color: var(--seasalt);
+    font-size: 2.2rem;
+}
+
+.card input {
+    position: absolute;
+    height: 54px;
+    width: 320px;
+    border-radius: none;
+    box-shadow: none;
+}
+
+html .card input:focus {
+    border-radius: 16px 0 0 16px;
+}
+
+html .completed {
+    background-color: var(--french-gray);
+    box-shadow: none;
+}
+
+html .completed input {
+    background-color: var(--french-gray);
+}
+
+.resetBtn {
+    position: fixed;
+    bottom: 4vh;
+    left: 8vw;
+}
+
+#todoCount {
+    padding-top: 10px;
+    font-size: 2rem;
+}
+
+.delBtn:hover {
+    background-color: #eb1717;
+}
